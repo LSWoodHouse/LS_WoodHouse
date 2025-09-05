@@ -5,70 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L&S WoodHouse</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="font-sans bg-gray-50 text-gray-900">
+<body class="font-sans bg-gray-50 text-gray-800">
 
-  <!-- Hero -->
-  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/Hero.jpg');">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40"></div>
-    <div class="relative text-center text-white max-w-xl mx-auto px-6">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">L&S WoodHouse</h1>
-      <p class="text-lg md:text-xl mb-6">Затишний котедж у серці Карпат — відпочинок для сімей та друзів 🌲</p>
-      <a href="#booking" class="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl text-lg font-semibold shadow-lg hover:scale-105 transition">Забронювати</a>
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/Hero\ .jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-2xl text-center text-white">
+      <h1 class="text-5xl font-bold mb-4">L&S WoodHouse</h1>
+      <p class="text-xl mb-6">Затишний відпочинок у серці Карпат</p>
+      <a href="#booking" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-lg">Забронювати</a>
     </div>
   </section>
 
   <!-- About -->
-  <section class="py-20 px-6 md:px-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8">Про котедж</h2>
-    <p class="max-w-2xl mx-auto mb-12 text-lg leading-relaxed">
-      L&S WoodHouse – сучасний котедж з натурального дерева для вашого комфортного відпочинку. 
-      Просторі та затишні кімнати з окремими санвузлами й кондиціонерами, повністю обладнана кухня, Wi-Fi, паркінг та неймовірні панорами Карпат. 
-      Це ідеальне місце для сімей, пар і друзів, які хочуть відпочити від міського шуму та насолодитися чистим гірським повітрям.
-    </p>
+  <section class="py-16 px-6 md:px-20 text-center">
+    <h2 class="text-3xl font-bold mb-6">Про котедж</h2>
+    <p class="max-w-3xl mx-auto mb-10">L&S WoodHouse – це сучасний котедж з натурального дерева, створений для вашого комфортного відпочинку.</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-      <div class="p-6 bg-white rounded-2xl shadow hover:scale-105 transition">🚗 Парковка</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:scale-105 transition">📶 Wi-Fi</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:scale-105 transition">🍖 Мангал</div>
-      <div class="p-6 bg-white rounded-2xl shadow hover:scale-105 transition">🌲 Тераса</div>
+      <div class="p-4 bg-white rounded-2xl shadow">🔥 Камін</div>
+      <div class="p-4 bg-white rounded-2xl shadow">📶 Wi-Fi</div>
+      <div class="p-4 bg-white rounded-2xl shadow">🍖 Мангал</div>
+      <div class="p-4 bg-white rounded-2xl shadow">🌲 Тераса</div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery (Slider) -->
   <section class="py-16 bg-gray-100 px-6 md:px-20 text-center">
     <h2 class="text-3xl font-bold mb-8">Галерея</h2>
-    <div class="relative max-w-6xl mx-auto overflow-hidden rounded-xl shadow-lg">
-      <!-- Контейнер для слайдів -->
-      <div id="slider" class="flex transition-transform duration-700 ease-in-out">
-        <img src="images/golovna kyhnia.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/kyhnia.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/kyhnia2.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/stil kyhnia.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/Spalnia.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/spalnia1.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/spalnia2.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/spalnia3.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/vanna.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/terasa.jpg" class="w-full flex-shrink-0 object-cover">
-        <img src="images/terasa2.jpg" class="w-full flex-shrink-0 object-cover">
+    
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Контейнер для зображень -->
+      <div id="slider" class="overflow-hidden rounded-2xl shadow">
+        <img src="images/golovna-kyhnia.jpg" class="w-full">
+        <img src="images/kyhnia.jpg" class="w-full hidden">
+        <img src="images/kyhnia2.jpg" class="w-full hidden">
+        <img src="images/stil-kyhnia.jpg" class="w-full hidden">
+        <img src="images/spalnia.jpg" class="w-full hidden">
+        <img src="images/spalnia1.jpg" class="w-full hidden">
+        <img src="images/spalnia2.jpg" class="w-full hidden">
+        <img src="images/spalnia3.jpg" class="w-full hidden">
+        <img src="images/vanna.jpg" class="w-full hidden">
+        <img src="images/terasa.jpg" class="w-full hidden">
       </div>
 
-      <!-- Кнопки -->
-      <button onclick="prevSlide()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full">‹</button>
-      <button onclick="nextSlide()" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full">›</button>
+      <!-- Кнопки керування -->
+      <button onclick="prevSlide()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full">‹</button>
+      <button onclick="nextSlide()" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full">›</button>
     </div>
   </section>
 
   <!-- Booking -->
-  <section id="booking" class="py-20 px-6 md:px-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ціни та бронювання</h2>
-    <div class="max-w-lg mx-auto bg-white rounded-2xl shadow p-8">
-      <p class="mb-6 text-lg">Вартість оренди котеджу: <span class="font-semibold text-green-700">від 2500 грн/доба</span></p>
-      <a href="tel:+380979909007" class="block px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-lg font-semibold shadow-lg hover:scale-105 transition">Зателефонувати</a>
-    </div>
+  <section id="booking" class="py-16 px-6 md:px-20 text-center">
+    <h2 class="text-3xl font-bold mb-6">Ціни та бронювання</h2>
+    <p class="mb-6">Вартість оренди котеджу: <span class="font-semibold">від 4000 грн/доба</span></p>
+    <a href="tel:+380979909007" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-lg">Зателефонувати</a>
   </section>
 
   <!-- Contacts -->
-  <section class="py-20 bg-gray-900 text-white px-6 md:px-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">Контакти</h2>
-    <p class="mb-4">📞 <a href="tel:+380979909007" class="underli
+  <section class="py-16 bg-gray-900 text-white px-6 md:px-20 text-center">
+    <h2 class="text-3xl font-bold mb-6">Контакти</h2>
+    <p class="mb-4">Телефон: <a href="tel:+380979909007" class="underline">+38 (097) 990 90 07</a></p>
+    <p class="mb-4">Email: 
+      <a href="mailto:ls.woodhouse.verhovyna@gmail.com" class="underline">
+        ls.woodhouse.verhovyna@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <footer class="py-6 bg-black text-center text-gray-400">
+    © 2025 L&S WoodHouse. Всі права захищені.
+  </footer>
+
+  <!-- JS для слайдера -->
+  <script src="scripts/main.js"></script>
+  <script>
+    const slides = document.querySelectorAll("#slider img");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.add("hidden");
+        if (i === index) slide.classList.remove("hidden");
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Автоматична прокрутка кожні 3 секунди
+    setInterval(nextSlide, 3000);
+  </script>
+</body>
+</html>

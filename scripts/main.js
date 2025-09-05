@@ -1,7 +1,7 @@
 const slider = document.getElementById("slider");
-const slides = document.querySelectorAll("#slider img");
-const visibleSlides = 4; // показуємо 4 фото
+const slides = slider.querySelectorAll("img");
 let currentIndex = 0;
+let visibleSlides = 4; // показуємо по 4 фото
 
 function updateSlider() {
     const slideWidth = slides[0].clientWidth;
@@ -9,26 +9,20 @@ function updateSlider() {
 }
 
 function nextSlide() {
-    if (currentIndex >= slides.length - visibleSlides) {
-        currentIndex = 0; // повертаємось на початок
-    } else {
-        currentIndex++;
+    currentIndex++;
+    if (currentIndex > slides.length - visibleSlides) {
+        currentIndex = 0; // назад на початок
     }
     updateSlider();
 }
 
 function prevSlide() {
-    if (currentIndex <= 0) {
-        currentIndex = slides.length - visibleSlides; // йдемо в кінець
-    } else {
-        currentIndex--;
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = slides.length - visibleSlides; // в кінець
     }
     updateSlider();
 }
 
-// авто-прокрутка
-setInterval(nextSlide, 3000);
-
-// початковий стан
-updateSlider();
+setInterval(nextSlide, 3000); // автопрокрутка
 

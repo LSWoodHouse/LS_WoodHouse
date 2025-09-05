@@ -1,0 +1,20 @@
+/* styles/style.css */
+
+/* 1 фото на мобільному */
+#slider img {
+    width: 100%;
+}
+
+/* 2 фото на планшетах */
+@media (min-width: 640px) {
+    #slider img {
+        width: 50%;
+    }
+}
+
+/* 4 фото на великих екранах */
+@media (min-width: 1024px) {
+    #slider img {
+        width: 25%;
+    }
+}

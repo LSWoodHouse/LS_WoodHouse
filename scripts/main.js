@@ -1,26 +1,34 @@
-<script>
-    let currentIndex = 0;
+const slider = document.getElementById("slider");
+const slides = document.querySelectorAll("#slider img");
+const visibleSlides = 4; // показуємо 4 фото
+let currentIndex = 0;
 
-    function showSlide(index) {
-      const slider = document.getElementById('slider');
-    const totalSlides = slider.children.length;
+function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
 
-    if (index < 0) {
-        currentIndex = totalSlides - 1;
-      } else if (index >= totalSlides) {
-        currentIndex = 0;
-      } else {
-        currentIndex = index;
-      }
-
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+function nextSlide() {
+    if (currentIndex >= slides.length - visibleSlides) {
+        currentIndex = 0; // повертаємось на початок
+    } else {
+        currentIndex++;
     }
+    updateSlider();
+}
 
-    function nextSlide() {
-        showSlide(currentIndex + 1);
+function prevSlide() {
+    if (currentIndex <= 0) {
+        currentIndex = slides.length - visibleSlides; // йдемо в кінець
+    } else {
+        currentIndex--;
     }
+    updateSlider();
+}
 
-    function prevSlide() {
-        showSlide(currentIndex - 1);
-    }
-</script>
+// авто-прокрутка
+setInterval(nextSlide, 3000);
+
+// початковий стан
+updateSlider();
+

@@ -87,7 +87,7 @@
   <script>
   const slider = document.getElementById("slider");
   const slides = slider.querySelectorAll("img");
-  const visibleSlides = 4; // показуємо по 4
+  const visibleSlides = 4; // показуємо по 4 фото
   let currentIndex = 0;
 
   function updateSlider() {
@@ -96,25 +96,22 @@
   }
 
   function nextSlide() {
-    if (currentIndex < slides.length - visibleSlides) {
-      currentIndex++;
-      updateSlider();
-    } else {
+    currentIndex++;
+    if (currentIndex > slides.length - visibleSlides) {
       currentIndex = 0; // повертаємось на початок
-      updateSlider();
     }
+    updateSlider();
   }
 
   function prevSlide() {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    } else {
+    currentIndex--;
+    if (currentIndex < 0) {
       currentIndex = slides.length - visibleSlides; // в кінець
-      updateSlider();
     }
+    updateSlider();
   }
 
-  // автопрокрутка (кожні 3с)
+  // автопрокрутка кожні 3с
   setInterval(nextSlide, 3000);
 </script>
+

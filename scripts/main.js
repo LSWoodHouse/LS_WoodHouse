@@ -24,5 +24,5 @@ function prevSlide() {
     updateSlider();
 }
 
-setInterval(nextSlide, 3000); // автопрокрутка
+setInterval(nextSlide, 2000); // автопрокрутка
 

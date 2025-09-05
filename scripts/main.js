@@ -24,5 +24,3 @@
     showSlide(currentIndex - 1);
     }
 </script>
-</body >
-</html >

@@ -49,7 +49,9 @@
       class="fixed top-4 left-4 z-50 opacity-0 transition-opacity duration-500"
     >
       <a
-        href="/"
+        href="https://www.instagram.com/ls_woodhouse/"
+        target="_blank"
+        rel="noopener"
         class="flex items-center space-x-2 bg-white px-3 py-2 rounded-xl shadow-lg"
       >
         <svg
@@ -451,47 +453,66 @@
     </footer>
 
     <!-- JS для слайдера -->
+  
+ <script>
+  const slider = document.getElementById("slider");
+  const slides = slider.querySelectorAll("img");
+  let visibleSlides = getVisibleSlides();
+  let currentIndex = 0;
+
+  function getVisibleSlides() {
+    if (window.innerWidth < 640) return 2; // телефон
+    if (window.innerWidth < 1024) return 4; // планшет
+    return 4; // ПК
+  }
+
+  function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  function nextSlide() {
+    currentIndex++;
+    if (currentIndex > slides.length - visibleSlides) {
+      currentIndex = 0;
+    }
+    updateSlider();
+  }
+
+  function prevSlide() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = slides.length - visibleSlides;
+    }
+    updateSlider();
+  }
+
+  // реагуємо на зміну розміру вікна
+  window.addEventListener("resize", () => {
+    visibleSlides = getVisibleSlides();
+    updateSlider();
+  });
+
+  // автопрокрутка кожні 4 секунди
+  setInterval(nextSlide, 4000);
+</script>
+
     <script>
-      const slider = document.getElementById("slider");
-      const slides = slider.querySelectorAll("img");
-      const visibleSlides = 4; // показуємо по 4 фото
-      let currentIndex = 0;
+  const logo = document.getElementById("scroll-logo");
 
-      function updateSlider() {
-        const slideWidth = slides[0].clientWidth;
-        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-      }
+  // показуємо логотип при завантаженні сайту
+  window.addEventListener("load", () => {
+    logo.classList.add("visible");
+  });
 
-      function nextSlide() {
-        currentIndex++;
-        if (currentIndex > slides.length - visibleSlides) {
-          currentIndex = 0; // повертаємось на початок
-        }
-        updateSlider();
-      }
-
-      function prevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-          currentIndex = slides.length - visibleSlides; // в кінець
-        }
-        updateSlider();
-      }
-
-      // автопрокрутка кожні 2с
-      setInterval(nextSlide, 2000);
-    </script>
-
-    <script>
-      // Показуємо/ховаємо логотип при скролі
-      window.addEventListener("scroll", function () {
-        const logo = document.getElementById("scroll-logo");
-        if (window.scrollY > 100) {
-          logo.classList.add("visible");
-        } else {
-          logo.classList.remove("visible");
-        }
-      });
-    </script>
+  // показуємо/ховаємо логотип при скролі
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      logo.classList.add("visible");
+    } else {
+      logo.classList.remove("visible");
+    }
+  });
+</script>
   </body>
 </html>

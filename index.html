@@ -454,65 +454,65 @@
 
     <!-- JS для слайдера -->
   
- <script>
-  const slider = document.getElementById("slider");
-  const slides = slider.querySelectorAll("img");
-  let visibleSlides = getVisibleSlides();
-  let currentIndex = 0;
+    <script>
+      const slider = document.getElementById("slider");
+      const slides = slider.querySelectorAll("img");
+      let visibleSlides = getVisibleSlides();
+      let currentIndex = 0;
 
-  function getVisibleSlides() {
-    if (window.innerWidth < 640) return 2; // телефон
-    if (window.innerWidth < 1024) return 4; // планшет
-    return 4; // ПК
-  }
+      function getVisibleSlides() {
+        if (window.innerWidth < 640) return 2; // телефон
+        if (window.innerWidth < 1024) return 4; // планшет
+        return 4; // ПК
+      }
 
-  function updateSlider() {
-    const slideWidth = slides[0].clientWidth;
-    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
+      function updateSlider() {
+        const slideWidth = slides[0].clientWidth;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      }
 
-  function nextSlide() {
-    currentIndex++;
-    if (currentIndex > slides.length - visibleSlides) {
-      currentIndex = 0;
-    }
-    updateSlider();
-  }
+      function nextSlide() {
+        currentIndex++;
+        if (currentIndex > slides.length - visibleSlides) {
+          currentIndex = 0;
+        }
+        updateSlider();
+      }
 
-  function prevSlide() {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = slides.length - visibleSlides;
-    }
-    updateSlider();
-  }
+      function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = slides.length - visibleSlides;
+        }
+        updateSlider();
+      }
 
-  // реагуємо на зміну розміру вікна
-  window.addEventListener("resize", () => {
-    visibleSlides = getVisibleSlides();
-    updateSlider();
-  });
+      // реагуємо на зміну розміру вікна
+      window.addEventListener("resize", () => {
+        visibleSlides = getVisibleSlides();
+        updateSlider();
+      });
 
-  // автопрокрутка кожні 4 секунди
-  setInterval(nextSlide, 4000);
-</script>
+      // автопрокрутка кожні 4 секунди
+      setInterval(nextSlide, 4000);
+    </script>
 
     <script>
-  const logo = document.getElementById("scroll-logo");
+      const logo = document.getElementById("scroll-logo");
 
-  // показуємо логотип при завантаженні сайту
-  window.addEventListener("load", () => {
-    logo.classList.add("visible");
-  });
+      // показуємо логотип при завантаженні сайту
+      window.addEventListener("load", () => {
+        logo.classList.add("visible");
+      });
 
-  // показуємо/ховаємо логотип при скролі
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      logo.classList.add("visible");
-    } else {
-      logo.classList.remove("visible");
-    }
-  });
-</script>
+      // показуємо/ховаємо логотип при скролі
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+          logo.classList.add("visible");
+        } else {
+          logo.classList.remove("visible");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -10,8 +10,46 @@
   <link rel="stylesheet" href="styles/style.css">
   <!-- Font Awesome для іконок -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <style>
+    /* Анімація кручення */
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-logo {
+      animation: spin 12s linear infinite;
+    }
+
+    /* Плавне зникання / поява */
+    #scroll-logo {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+    #scroll-logo.visible {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800">
+ 
+  <!-- Лого -->
+<header id="scroll-logo" class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="flex items-center justify-center h-16">
+      <a href="/" class="flex items-center space-x-3">
+        <svg width="40" height="40" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg"
+             class="spin-logo"
+             overflow="visible">
+          <!-- ТУТ встав повний path свого логотипа -->
+          <path d="M43.271,50.811c-3.732-2.864-7.807-5.79-11.995-7.928 
+                   c-5.327-2.72-11.33-4.209-16.399-0.051c-3.189,2.617-4.649,6.677-3.317,10.671
+                   c1.381,4.141,5.653,6.791,9.955,6.494 
+                   c8.522-0.582,9.873-9.155,2.22-10.114 ..." />
+        </svg>
+        <span class="text-xl font-bold text-gray-800">L&S WoodHouse</span>
+      </a>
+    </div>
+  </header>
 
   <!-- Hero Section -->
   <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/Hero.jpeg');">
@@ -189,6 +227,27 @@
   // автопрокрутка кожні 3с
   setInterval(nextSlide, 2000);
 </script>
+  <script>
+    // Показуємо/ховаємо логотип при скролі
+    window.addEventListener("scroll", function () {
+      const logo = document.getElementById("scroll-logo");
+      if (window.scrollY > 100) {
+        logo.classList.add("visible");
+      } else {
+        logo.classList.remove("visible");
+      }
+    });
+  </script>
+<style>
+/* Анімація кручення логотипа */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.spin-logo {
+  animation: spin 12s linear infinite; /* 12s = повільне обертання */
+}
+</style>
 
 </body>
 </html>

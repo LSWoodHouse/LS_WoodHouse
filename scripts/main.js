@@ -25,4 +25,3 @@ function prevSlide() {
 }
 
 setInterval(nextSlide, 2000); // автопрокрутка
-

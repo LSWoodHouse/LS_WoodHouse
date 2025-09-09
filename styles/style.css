@@ -30,27 +30,3 @@ body {
     height: 320px;
   }
 }
-
-/* повільне обертання логотипа */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.spin-logo {
-  animation: spin 12s linear infinite;
-  /* повільне обертання */
-}
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-.spin-logo {
-  animation: spin 12s linear infinite;
-}

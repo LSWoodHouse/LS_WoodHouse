@@ -33,18 +33,18 @@
 <body class="font-sans bg-gray-50 text-gray-800">
  
   <!-- Лого -->
-<header id="scroll-logo" class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
- <div id="scroll-logo" class="fixed top-4 left-4 z-50 opacity-0 transition-opacity duration-500">
-  <a href="/" class="flex items-center space-x-2 bg-white px-3 py-2 rounded-xl shadow-lg">
-    <svg width="40" height="40" viewBox="0 0 100 100"
-         xmlns="http://www.w3.org/2000/svg"
-         class="spin-logo">
-      <path d="M43.271,50.811c-3.732-2.864 ..."></path>
-    </svg>
-    <span class="text-lg font-bold text-gray-800">L&S</span>
-  </a>
-</div>
-</header>
+ 
+  <div id="scroll-logo" class="fixed top-4 left-4 z-50 opacity-0 transition-opacity duration-500">
+    <a href="/" class="flex items-center space-x-2 bg-white px-3 py-2 rounded-xl shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 512 512" 
+          preserveAspectRatio="xMidYMid meet"
+          class="spin-logo w-12 h-12 text-green-600">
+        <path fill="currentColor" d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm0 96c61.9 0 112 50.1 112 112s-50.1 112-112 112-112-50.1-112-112 50.1-112 112-112z"/>
+      </svg>
+      <span class="text-lg font-bold text-gray-800">L&S WoodHouse</span>
+    </a>
+  </div>
 
   <!-- Hero Section -->
   <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/Hero.jpeg');">
@@ -222,8 +222,8 @@
   // автопрокрутка кожні 3с
   setInterval(nextSlide, 2000);
 </script>
-  <script>
-    // Показуємо/ховаємо логотип при скролі
+
+  <script> // Показуємо/ховаємо логотип при скролі
     window.addEventListener("scroll", function () {
       const logo = document.getElementById("scroll-logo");
       if (window.scrollY > 100) {
@@ -233,16 +233,6 @@
       }
     });
   </script>
-<style>
-/* Анімація кручення логотипа */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.spin-logo {
-  animation: spin 12s linear infinite; /* 12s = повільне обертання */
-}
-</style>
 
 </body>
 </html>

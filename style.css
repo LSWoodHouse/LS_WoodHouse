@@ -18,3 +18,29 @@
         width: 25%;
     }
 }
+/* Анімація обертання */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-logo {
+    animation: spin 12s linear infinite;
+}
+
+/* Поява/зникання */
+#scroll-logo {
+    pointer-events: none;
+    /* щоб невидимий блок не перекривав кліки */
+}
+
+#scroll-logo.visible {
+    opacity: 1;
+    pointer-events: auto;
+    /* активний тільки коли видно */
+}

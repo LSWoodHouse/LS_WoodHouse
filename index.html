@@ -20,25 +20,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <style>
-      /* Анімація кручення */
+      /* 1 фото на мобільному */
+      #slider img {
+          width: 100%;
+      }
+
+      /* 2 фото на планшетах */
+      @media (min-width: 640px) {
+          #slider img {
+              width: 50%;
+          }
+      }
+
+      /* 4 фото на великих екранах */
+      @media (min-width: 1024px) {
+          #slider img {
+              width: 25%;
+          }
+      }
+      /* Анімація обертання */
       @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
+          0% {
+              transform: rotate(0deg);
+          }
+
+          100% {
+              transform: rotate(360deg);
+          }
       }
+
       .spin-logo {
-        animation: spin 12s linear infinite;
+          animation: spin 12s linear infinite;
       }
-      /* Плавне зникання / поява */
+
+      /* Поява/зникання */
       #scroll-logo {
-        opacity: 0;
-        transition: opacity 0.6s ease;
+          pointer-events: none;
+          /* щоб невидимий блок не перекривав кліки */
       }
+
       #scroll-logo.visible {
-        opacity: 1;
+          opacity: 1;
+          pointer-events: auto;
+          /* активний тільки коли видно */
       }
     </style>
   </head>

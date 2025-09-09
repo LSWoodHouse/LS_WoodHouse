@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="uk">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="MRqxVBpgmW7PyEu8xbAt70fzNniMpxHjHa5aRSG1Shk" />
-  <meta name="description" content="L&S WoodHouse — сучасний котедж у Верховині, Івано-Франківська область. Затишок, тераса, кухня, Wi-Fi, панорамні краєвиди Карпат.">
-
-  <title>L&S WoodHouse</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles/style.css">
-  <!-- Font Awesome для іконок -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <style>
-    /* Анімація кручення */
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .spin-logo {
-      animation: spin 12s linear infinite;
-    }
-
-    /* Плавне зникання / поява */
-    #scroll-logo {
-      opacity: 0;
-      transition: opacity 0.6s ease;
-    }
-    #scroll-logo.visible {
-      opacity: 1;
-    }
-  </style>
-</head>
-<body class="font-sans bg-gray-50 text-gray-800">
- 
-  <!-- Лого -->
- 
-  <div id="scroll-logo" class="fixed top-4 left-4 z-50 opacity-0 transition-opacity duration-500">
-  <a href="/" class="flex items-center space-x-2 bg-white px-3 py-2 rounded-xl shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         viewBox="0 0 100 100" 
-         preserveAspectRatio="xMidYMid meet"
-         class="spin-logo w-12 h-12 text-yellow-400">
-      <path fill="currentColor" d="M43.271,50.811c-3.732-2.864-7.807-5.79-11.995-7.928 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="MRqxVBpgmW7PyEu8xbAt70fzNniMpxHjHa5aRSG1Shk"
+    />
+    <meta
+      name="description"
+      content="L&S WoodHouse — сучасний котедж у Верховині, Івано-Франківська область. Затишок, тераса, кухня, Wi-Fi, панорамні краєвиди Карпат."
+    />
+    <title>L&S WoodHouse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* Анімація кручення */
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .spin-logo {
+        animation: spin 12s linear infinite;
+      }
+      /* Плавне зникання / поява */
+      #scroll-logo {
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+      #scroll-logo.visible {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Лого -->
+    <div
+      id="scroll-logo"
+      class="fixed top-4 left-4 z-50 opacity-0 transition-opacity duration-500"
+    >
+      <a
+        href="/"
+        class="flex items-center space-x-2 bg-white px-3 py-2 rounded-xl shadow-lg"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="xMidYMid meet"
+          class="spin-logo w-12 h-12 text-yellow-400"
+        >
+          <path
+            fill="currentColor"
+            d="M43.271,50.811c-3.732-2.864-7.807-5.79-11.995-7.928 
                  c-5.327-2.72-11.33-4.209-16.399-0.051 
                  c-3.189,2.617-4.649,6.677-3.317,10.671 
                  c1.381,4.141,5.653,6.791,9.955,6.494 
@@ -97,286 +115,383 @@
                  c7.209-4.012,16.329-0.796,18.736,7.351 
                  c5.031,18.513-15.667,31.525-30.537,19.558 
                  c-8.729-7.022-7.838-19.493-3.096-28.59 
-                 C37.084,59.957,40.255,55.36,43.271,50.811z"/>
-    </svg>
-    <span class="text-lg font-bold text-gray-800">L&S WoodHouse</span>
-  </a>
-</div>
+                 C37.084,59.957,40.255,55.36,43.271,50.811z"
+          />
+        </svg>
+        <span class="text-lg font-bold text-gray-800">L&S WoodHouse</span>
+      </a>
+    </div>
 
-  <!-- Hero Section -->
-  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/hero.webp');">
-    <div class="bg-black bg-opacity-50 p-8 rounded-2xl text-center text-white">
-      <h1 class="text-5xl font-bold mb-4">L&S WoodHouse</h1>
-      <p class="text-xl mb-2">Затишний відпочинок у серці Карпат</p>
-      <p class="text-lg text-green-300 font-semibold tracking-wide uppercase mb-6">
-        Верховина, Івано-Франківська область
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center flex items-center justify-center"
+      style="background-image: url('images/hero.webp')"
+    >
+      <div
+        class="bg-black bg-opacity-50 p-8 rounded-2xl text-center text-white"
+      >
+        <h1 class="text-5xl font-bold mb-4">L&S WoodHouse</h1>
+        <p class="text-xl mb-2">Затишний відпочинок у серці Карпат</p>
+        <p
+          class="text-lg text-green-300 font-semibold tracking-wide uppercase mb-6"
+        >
+          Верховина, Івано-Франківська область
+        </p>
+        <a
+          href="#booking"
+          class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-lg"
+          >Забронювати</a
+        >
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-16 px-6 md:px-20 text-center">
+      <h2
+        class="text-4xl font-bold mb-6 font-serif tracking-wide text-gray-800"
+      >
+        Про котедж
+      </h2>
+      <p
+        class="max-w-3xl mx-auto mb-10 text-lg leading-relaxed text-gray-600 font-sans"
+      >
+        Котедж <span class="font-semibold text-gray-800">L&S WoodHouse</span> –
+        сучасний комфорт у серці Карпат, розташований у мальовничій Верховині.
+        Для гостей передбачені просторі та затишні кімнати з окремими санвузлами
+        й кондиціонерами, повністю обладнана кухня, Wi-Fi, паркінг та панорамні
+        краєвиди на гори. Тут панує атмосфера затишку та спокою, яка дарує
+        справжній відпочинок. Ідеальне місце для сімей, пар і друзів, які хочуть
+        втекти від міського шуму та насолодитися чистим гірським повітрям і
+        природою.
       </p>
-      <a href="#booking" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-lg">Забронювати</a>
-    </div>
-  </section>
 
-  <!-- About -->
- <section class="py-16 px-6 md:px-20 text-center">
-  <h2 class="text-4xl font-bold mb-6 font-serif tracking-wide text-gray-800">
-    Про котедж
-  </h2>
-  <p class="max-w-3xl mx-auto mb-10 text-lg leading-relaxed text-gray-600 font-sans">
-    Котедж <span class="font-semibold text-gray-800">L&S WoodHouse</span> – сучасний комфорт у серці Карпат, розташований у мальовничій Верховині. 
-    Для гостей передбачені просторі та затишні кімнати з окремими санвузлами й кондиціонерами, 
-    повністю обладнана кухня, Wi-Fi, паркінг та панорамні краєвиди на гори. Тут панує атмосфера затишку та спокою, 
-    яка дарує справжній відпочинок. Ідеальне місце для сімей, пар і друзів, які хочуть втекти від міського шуму 
-    та насолодитися чистим гірським повітрям і природою.
-  </p>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-  <div class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition font-medium text-gray-700 flex flex-col items-center">
-   <i class="fas fa-car text-gray-700 text-2xl mb-2"></i>
-   <span class="font-medium">Парковка</span>
-  </div>
-  <div class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center">
-    <i class="fas fa-wifi text-blue-500 text-2xl mb-2"></i>
-    <span class="font-medium">Wi-Fi</span>
-  </div>
-  <div class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition font-medium text-gray-700 flex flex-col items-center">
-    🍖
-    <span class="mt-2">Мангал</span>
-  </div>
-  <div class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition font-medium text-gray-700 flex flex-col items-center">
-    🌲
-    <span class="mt-2">Тераса</span>
-  </div>
-</div>
-</section>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-gray-700"
+      >
+        <div
+          class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center"
+        >
+          <i class="fas fa-car text-2xl mb-2"></i>
+          <span>Парковка</span>
+        </div>
+        <div
+          class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center"
+        >
+          <i class="fas fa-wifi text-blue-500 text-2xl mb-2"></i>
+          <span>Wi-Fi</span>
+        </div>
+        <div
+          class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center"
+        >
+          🍖 <span class="mt-2">Мангал</span>
+        </div>
+        <div
+          class="p-4 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center"
+        >
+          🌲 <span class="mt-2">Тераса</span>
+        </div>
+      </div>
+    </section>
 
-  <!-- Gallery (Slider) -->
-<div class="relative max-w-6xl mx-auto overflow-hidden">
-  <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+    <!-- Gallery (Slider) -->
+    <section class="relative max-w-6xl mx-auto overflow-hidden">
+      <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+        <img
+          src="images/vhid.webp"
+          alt="Вхід до котеджу L&S WoodHouse"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/vhid-bik.webp"
+          alt="Вхід збоку до котеджу L&S WoodHouse"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/terassa-bik.webp"
+          alt="Тераса з бокового ракурсу"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/terassa.webp"
+          alt="Основна тераса з видом на гори"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/zal-kuhnia.webp"
+          alt="Зал і кухня у котеджі L&S WoodHouse"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/holodulnik.webp"
+          alt="Холодильник на кухні"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/holkuhnia.webp"
+          alt="Вид на кухонну зону з холодильником"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/stil.webp"
+          alt="Стіл у вітальні"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/stilvud.webp"
+          alt="Дерев'яний стіл у котеджі"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/robpovehnia.webp"
+          alt="Робоча поверхня на кухні"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/duvan.webp"
+          alt="Диван у вітальні"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/pruhogia.webp"
+          alt="Пральна машина у ванній"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/ligko.webp"
+          alt="Ліжко у спальні"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/kimnatabik.webp"
+          alt="Спальня з бокового ракурсу"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/wtoru.webp"
+          alt="Вид на сходи у котеджі"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/vanna.webp"
+          alt="Ванна кімната"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/kabina.webp"
+          alt="Душова кабіна"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/ruwnukosuwka.webp"
+          alt="Рушникосушка у ванній кімнаті"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+        <img
+          src="images/dzerko.webp"
+          alt="Дзеркало у ванній кімнаті"
+          class="w-1/4 p-2 rounded-2xl"
+          loading="lazy"
+        />
+      </div>
 
-    <img src="images/vhid.webp" 
-         alt="Вхід до котеджу L&S WoodHouse"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
+      <!-- Кнопки слайдера -->
+      <button
+        onclick="prevSlide()"
+        class="absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full"
+        aria-label="Попереднє фото"
+      >
+        ‹
+      </button>
+      <button
+        onclick="nextSlide()"
+        class="absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full"
+        aria-label="Наступне фото"
+      >
+        ›
+      </button>
+    </section>
 
-    <img src="images/vhid-bik.webp" 
-         alt="Вхід збоку до котеджу L&S WoodHouse"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/terassa-bik.webp" 
-         alt="Тераса з бокового ракурсу"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/terassa.webp" 
-         alt="Основна тераса з видом на гори"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/zal-kuhnia.webp" 
-         alt="Зал і кухня у котеджі L&S WoodHouse"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/holodulnik.webp" 
-         alt="Холодильник на кухні"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/holkuhnia.webp" 
-         alt="Вид на кухонну зону з холодильником"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/stil.webp" 
-         alt="Стіл у вітальні"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/stilvud.webp" 
-         alt="Дерев'яний стіл у котеджі"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/robpovehnia.webp" 
-         alt="Робоча поверхня на кухні"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/duvan.webp" 
-         alt="Диван у вітальні"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/pruhogia.webp" 
-         alt="Пральна машина у ванній"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/ligko.webp" 
-         alt="Ліжко у спальні"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/kimnatabik.webp" 
-         alt="Спальня з бокового ракурсу"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/wtoru.webp" 
-         alt="Вид на сходи у котеджі"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/vanna.webp" 
-         alt="Ванна кімната"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/kabina.webp" 
-         alt="Душова кабіна"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/ruwnukosuwka.webp" 
-         alt="Рушникосушка у ванній кімнаті"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-    <img src="images/dzerko.webp" 
-         alt="Дзеркало у ванній кімнаті"
-         class="w-1/4 p-2 rounded-2xl"
-         loading="lazy">
-
-  </div>
-</div>
-
-  <!-- кнопки -->
-  <button onclick="prevSlide()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full">‹</button>
-  <button onclick="nextSlide()" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full">›</button>
-  </div>
-  </section>
-
-  <div class="fixed bottom-6 right-6 flex flex-row space-x-3 z-50">
-  <!-- Call -->
-  <a href="tel:+380979909007" 
-     class="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg hover:bg-red-600 transition">
-    <i class="fas fa-phone text-white text-2xl"></i>
-  </a>
-  <!-- WhatsApp -->
-  <a href="https://wa.me/380979909007" target="_blank" 
-     class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition">
-    <i class="fab fa-whatsapp text-white text-2xl"></i>
-  </a>
-  <!-- Telegram -->
-  <a href="https://t.me/yourusername" target="_blank" 
-     class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition">
-    <i class="fab fa-telegram text-white text-2xl"></i>
-  </a>
-  </div>
-
-
-
-  <!-- Booking -->
-  <section id="booking" class="py-16 px-6 md:px-20 text-center">
-    <h2 class="text-3xl font-bold mb-6">Ціни та бронювання</h2>
-    <p class="mb-6">Вартість оренди котеджу: <span class="font-semibold">від 4000 грн/доба</span></p>
-    <a href="tel:+380979909007" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-lg">Зателефонувати</a>
-  </section>
-
-  <!-- Contacts -->
-  <section class="py-16 bg-gray-900 text-white px-6 md:px-20 text-center">
-    <h2 class="text-3xl font-bold mb-6">Контакти</h2>
-    <p class="mb-4">Телефон: <a href="tel:+380979909007" class="underline">+38 (097) 990 90 07</a></p>
-    <p class="mb-4">Email: 
-      <a href="mailto:ls.woodhouse.verhovyna@gmail.com" class="underline">
-        ls.woodhouse.verhovyna@gmail.com
+    <!-- Floating contact buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-row space-x-3 z-50">
+      <!-- Call -->
+      <a
+        href="tel:+380979909007"
+        class="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center shadow-lg hover:bg-red-600 transition"
+        aria-label="Подзвонити"
+      >
+        <i class="fas fa-phone text-white text-2xl"></i>
       </a>
-       <p class="mb-4">Instagram: 
-        <a href="https://www.instagram.com/ls_woodhouse/" class="underline" target="_blank">ls_woodhouse</a>
-      </p>  
-
-    <!-- Соцмережі -->
-    <div class="flex justify-center space-x-6 mt-6 text-3xl">
-      <a href="https://www.instagram.com/ls_woodhouse/" target="_blank" class="hover:text-pink-500">
-        <i class="fab fa-instagram"></i>
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/380979909007"
+        target="_blank"
+        class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition"
+        aria-label="Написати у WhatsApp"
+      >
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
       </a>
-      <a href="https://wa.me/380979909007" target="_blank" class="hover:text-green-500">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="viber://+380979909007" target="_blank" class="hover:text-purple-400">
-        <i class="fab fa-viber"></i>
-      </a>
-      <a href="https://t.me/yourusername" target="_blank" class="hover:text-blue-400">
-        <i class="fab fa-telegram"></i>
+      <!-- Telegram -->
+      <a
+        href="https://t.me/yourusername"
+        target="_blank"
+        class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition"
+        aria-label="Написати у Telegram"
+      >
+        <i class="fab fa-telegram text-white text-2xl"></i>
       </a>
     </div>
-  </section>
 
-  <!-- Google Map -->
-<section class="py-16 px-6 md:px-20 text-center">
-  <h2 class="text-3xl font-bold mb-6">Наше розташування</h2>
-  <p class="mb-6 text-gray-600">Котедж L&S WoodHouse у Верховині</p>
+    <!-- Booking -->
+    <section id="booking" class="py-16 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ціни та бронювання</h2>
+      <p class="mb-6">
+        Вартість оренди котеджу:
+        <span class="font-semibold">від 4000 грн/доба</span>
+      </p>
+      <a
+        href="tel:+380979909007"
+        class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-lg"
+        >Зателефонувати</a
+      >
+    </section>
 
-  <!-- Контейнер для карти -->
-  <div class="w-full h-[250px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.746734398756!2d24.827761499999998!3d48.150834200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736ef0eb4d55ccf%3A0x15ff275c0471c227!2sL%26S%20WoodHouse!5e1!3m2!1suk!2sua!4v1757078338715!5m2!1suk!2sua" 
-      width="100%" 
-      height="100%" 
-      style="border:0;" 
-      allowfullscreen 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Мапа розташування котеджу L&S WoodHouse у Верховині">
-    </iframe>
-  </div>
-</section>
+    <!-- Contacts -->
+    <section class="py-16 bg-gray-900 text-white px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Контакти</h2>
+      <p class="mb-4">
+        Телефон:
+        <a href="tel:+380979909007" class="underline">+38 (097) 990 90 07</a>
+      </p>
+      <p class="mb-4">
+        Email:
+        <a href="mailto:ls.woodhouse.verhovyna@gmail.com" class="underline">
+          ls.woodhouse.verhovyna@gmail.com
+        </a>
+      </p>
+      <p class="mb-4">
+        Instagram:
+        <a
+          href="https://www.instagram.com/ls_woodhouse/"
+          class="underline"
+          target="_blank"
+          >ls_woodhouse</a
+        >
+      </p>
 
-  <footer class="py-6 bg-black text-center text-gray-400">
-    © 2025 L&S WoodHouse. Всі права захищені.
-  </footer>
+      <!-- Соцмережі -->
+      <div class="flex justify-center space-x-6 mt-6 text-3xl">
+        <a
+          href="https://www.instagram.com/ls_woodhouse/"
+          target="_blank"
+          class="hover:text-pink-500"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://wa.me/380979909007"
+          target="_blank"
+          class="hover:text-green-500"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="viber://+380979909007" target="_blank" class="hover:text-purple-400">
+          <i class="fab fa-viber"></i>
+        </a>
+        <a
+          href="https://t.me/yourusername"
+          target="_blank"
+          class="hover:text-blue-400"
+        >
+          <i class="fab fa-telegram"></i>
+        </a>
+      </div>
+    </section>
 
-  <!-- JS для слайдера -->
-  <script>
-  const slider = document.getElementById("slider");
-  const slides = slider.querySelectorAll("img");
-  const visibleSlides = 4; // показуємо по 4 фото
-  let currentIndex = 0;
+    <!-- Google Map -->
+    <section class="py-16 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Наше розташування</h2>
+      <p class="mb-6 text-gray-600">Котедж L&S WoodHouse у Верховині</p>
 
-  function updateSlider() {
-    const slideWidth = slides[0].clientWidth;
-    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
+      <div
+        class="w-full h-[250px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.746734398756!2d24.827761499999998!3d48.150834200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736ef0eb4d55ccf%3A0x15ff275c0471c227!2sL%26S%20WoodHouse!5e1!3m2!1suk!2sua!4v1757078338715!5m2!1suk!2sua"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Мапа розташування котеджу L&S WoodHouse у Верховині"
+        ></iframe>
+      </div>
+    </section>
 
-  function nextSlide() {
-    currentIndex++;
-    if (currentIndex > slides.length - visibleSlides) {
-      currentIndex = 0; // повертаємось на початок
-    }
-    updateSlider();
-  }
+    <footer class="py-6 bg-black text-center text-gray-400">
+      © 2025 L&S WoodHouse. Всі права захищені.
+    </footer>
 
-  function prevSlide() {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = slides.length - visibleSlides; // в кінець
-    }
-    updateSlider();
-  }
+    <!-- JS для слайдера -->
+    <script>
+      const slider = document.getElementById("slider");
+      const slides = slider.querySelectorAll("img");
+      const visibleSlides = 4; // показуємо по 4 фото
+      let currentIndex = 0;
 
-  // автопрокрутка кожні 3с
-  setInterval(nextSlide, 2000);
-</script>
-
-  <script> // Показуємо/ховаємо логотип при скролі
-    window.addEventListener("scroll", function () {
-      const logo = document.getElementById("scroll-logo");
-      if (window.scrollY > 100) {
-        logo.classList.add("visible");
-      } else {
-        logo.classList.remove("visible");
+      function updateSlider() {
+        const slideWidth = slides[0].clientWidth;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
       }
-    });
-  </script>
 
-</body>
+      function nextSlide() {
+        currentIndex++;
+        if (currentIndex > slides.length - visibleSlides) {
+          currentIndex = 0; // повертаємось на початок
+        }
+        updateSlider();
+      }
+
+      function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = slides.length - visibleSlides; // в кінець
+        }
+        updateSlider();
+      }
+
+      // автопрокрутка кожні 2с
+      setInterval(nextSlide, 2000);
+    </script>
+
+    <script>
+      // Показуємо/ховаємо логотип при скролі
+      window.addEventListener("scroll", function () {
+        const logo = document.getElementById("scroll-logo");
+        if (window.scrollY > 100) {
+          logo.classList.add("visible");
+        } else {
+          logo.classList.remove("visible");
+        }
+      });
+    </script>
+  </body>
 </html>

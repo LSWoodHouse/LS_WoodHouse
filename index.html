@@ -1,109 +1,114 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="MRqxVBpgmW7PyEu8xbAt70fzNniMpxHjHa5aRSG1Shk"
-    />
-    <meta
-      name="description"
-      content="L&S WoodHouse — сучасний котедж у Верховині, Івано-Франківська область. Затишок, тераса, кухня, Wi-Fi, панорамні краєвиди Карпат."
-    />
-    <title>L&S WoodHouse</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <style>
-      body {
-        scroll-behavior: smooth;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      #slider img {
-        height: 300px;
-        object-fit: cover;
-        flex-shrink: 0;
-      }
+  <!-- Верифікація Google -->
+  <meta name="google-site-verification" content="MRqxVBpgmW7PyEu8xbAt70fzNniMpxHjHa5aRSG1Shk" />
 
-      /* Мобільний */
-      @media (max-width: 640px) {
-        #slider img {
-          height: 220px;
-        }
-      }
+  <!-- SEO -->
+  <title>L&S WoodHouse — сучасний котедж у Верховині, Карпати</title>
+  <meta name="description" content="L&S WoodHouse — сучасний котедж у Верховині, Івано-Франківська область. Затишок, тераса, кухня, Wi-Fi, панорамні краєвиди Карпат. Оренда від 4000 грн/доба." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lswoodhouse.github.io/LS_WoodHouse/" />
 
-      /* Планшет */
-      @media (min-width: 641px) and (max-width: 1024px) {
-        #slider img {
-          height: 260px;
-        }
-      }
+  <!-- Open Graph (Facebook, Instagram, Viber, Messenger) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lswoodhouse.github.io/LS_WoodHouse/" />
+  <meta property="og:title" content="L&S WoodHouse — котедж у Верховині" />
+  <meta property="og:description" content="Затишний котедж у Карпатах з панорамними краєвидами, Wi-Fi, кухнею та терасою. Відпочинок у Верховині від 4000 грн/доба." />
+  <meta property="og:image" content="https://lswoodhouse.github.io/LS_WoodHouse/images/main-preview.jpg" />
 
-      /* ПК */
-      @media (min-width: 1025px) {
-        #slider img {
-          height: 320px;
-        }
-      }
-      /* 1 фото на мобільному */
-      #slider img {
-          width: 100%;
-      }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="L&S WoodHouse — котедж у Верховині" />
+  <meta name="twitter:description" content="Сучасний котедж у Карпатах. Панорамні краєвиди, кухня, Wi-Fi, тераса. Забронюйте від 4000 грн/доба." />
+  <meta name="twitter:image" content="https://lswoodhouse.github.io/LS_WoodHouse/images/main-preview.jpg" />
 
-      /* 2 фото на планшетах */
-      @media (min-width: 640px) {
-          #slider img {
-              width: 50%;
-          }
-      }
+  <!-- Favicon -->
+  <link rel="icon" href="https://lswoodhouse.github.io/LS_WoodHouse/images/favicon.png" type="image/png" />
 
-      /* 4 фото на великих екранах */
-      @media (min-width: 1024px) {
-          #slider img {
-              width: 25%;
-          }
-      }
-      /* Анімація обертання */
-      @keyframes spin {
-          0% {
-              transform: rotate(0deg);
-          }
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css" />
 
-          100% {
-              transform: rotate(360deg);
-          }
-      }
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-      .spin-logo {
-          animation: spin 12s linear infinite;
-      }
-
-      /* Поява/зникання */
-      #scroll-logo {
-          pointer-events: none;
-          /* щоб невидимий блок не перекривав кліки */
-      }
-
-      #scroll-logo.visible {
-          opacity: 1;
-          pointer-events: auto;
-          /* активний тільки коли видно */
-      }
-    </style>
-      <!-- Tailwind локально (оптимально) -->
+  <!-- Tailwind локально -->
   <link rel="stylesheet" href="/dist/output.css">
-<link rel="stylesheet" href="/css/all.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/all.min.css"></noscript>
 
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "L&S WoodHouse",
+    "description": "Сучасний котедж у Верховині. Панорамні краєвиди Карпат, кухня, Wi-Fi, тераса. Відпочинок від 4000 грн/доба.",
+    "image": "https://lswoodhouse.github.io/LS_WoodHouse/images/main-preview.jpg",
+    "url": "https://lswoodhouse.github.io/LS_WoodHouse/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Верховина",
+      "addressRegion": "Івано-Франківська область",
+      "addressCountry": "UA"
+    },
+    "telephone": "+380XXXXXXXXX",
+    "priceRange": "₴4000+"
+  }
+  </script>
 
-  </head>
+  <style>
+    body {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    #slider img {
+      height: 300px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    /* Мобільний */
+    @media (max-width: 640px) {
+      #slider img { height: 220px; }
+    }
+
+    /* Планшет */
+    @media (min-width: 641px) and (max-width: 1024px) {
+      #slider img { height: 260px; }
+    }
+
+    /* ПК */
+    @media (min-width: 1025px) {
+      #slider img { height: 320px; }
+    }
+
+    /* 1 фото на мобільному */
+    #slider img { width: 100%; }
+
+    /* 2 фото на планшетах */
+    @media (min-width: 640px) { #slider img { width: 50%; } }
+
+    /* 4 фото на великих екранах */
+    @media (min-width: 1024px) { #slider img { width: 25%; } }
+
+    /* Анімація обертання */
+    @keyframes spin { 0% { transform: rotate(0deg);} 100% { transform: rotate(360deg);} }
+    .spin-logo { animation: spin 12s linear infinite; }
+
+    /* Поява/зникання */
+    #scroll-logo { pointer-events: none; }
+    #scroll-logo.visible { opacity: 1; pointer-events: auto; }
+  </style>
+</head>
+
+ 
   <body class="font-sans bg-gray-50 text-gray-800">
     <!-- Лого -->
     <div

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://lswoodhouse.github.io/LS_WoodHouse/sitemap.xml

@@ -357,19 +357,109 @@
       </a>
     </div>
 
-    <!-- Booking -->
-    <section id="booking" class="py-16 px-6 md:px-20 text-center">
-      <h2 class="text-3xl font-bold mb-6">Ціни та бронювання</h2>
-      <p class="mb-6">
-        Вартість оренди котеджу:
-        <span class="font-semibold">від 4000 грн/доба</span>
-      </p>
-      <a
-        href="tel:+380979909007"
-        class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-lg"
-        >Зателефонувати</a
-      >
-    </section>
+<!-- Booking -->
+<section id="booking" class="py-16 px-6 md:px-20 text-center">
+  <h2 class="text-3xl font-bold mb-6">Ціни та бронювання</h2>
+
+  <!-- Seasonal Prices -->
+  <div class="grid md:grid-cols-3 gap-6 mb-10">
+    <!-- Summer -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl">
+      <!-- Sun Icon -->
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414M17.536 17.536l1.414 1.414M6.464 6.464L5.05 5.05" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Літо</h3>
+      <p class="text-lg mb-2">Вартість: <span class="font-bold">4000 грн/доба</span></p>
+      <p class="text-sm text-gray-600">Чудовий час для походів у гори та відпочинку на природі.</p>
+    </div>
+
+    <!-- Autumn -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl">
+      <!-- Leaf Icon -->
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 3c4 0 7 3 7 7s-3 7-7 7c0-4 3-7 7-7s7 3 7 7c0-8-6-14-14-14z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Осінь</h3>
+      <p class="text-lg mb-2">Вартість: <span class="font-bold">4000 грн/доба</span></p>
+      <p class="text-sm text-gray-600">Яскраві кольори Карпат і затишна атмосфера біля каміна.</p>
+    </div>
+
+    <!-- Winter -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl">
+      <!-- Snowflake Icon -->
+      <div class="flex justify-center mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2v20m-6-6l12-12M6 6l12 12M2 12h20" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Зима</h3>
+      <p class="text-lg mb-2">Вартість: <span class="font-bold">000 грн/доба</span></p>
+      <p class="text-sm text-gray-600">Ідеально для лижного відпочинку та зимових свят.</p>
+    </div>
+  </div>
+
+  <<!-- Room Description -->
+<div class="bg-gray-50 p-6 rounded-2xl shadow-md mb-10">
+  <h3 class="text-2xl font-semibold mb-6">Опис кімнат</h3>
+  <p class="text-lg mb-4">У котеджі є <span class="font-bold">дві просторі кімнати</span> з усіма зручностями:</p>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <!-- Room 1 -->
+    <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+      <h4 class="font-semibold mb-3 text-lg">Кімната 1</h4>
+      <ul class="space-y-2 text-gray-700 text-left">
+        <li class="flex items-center">
+          <span class="mr-2 text-blue-500">🛁</span> Окремий санвузол
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2 text-green-500">👗</span> Гардероб
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2 text-yellow-500">❄️</span> Кондиціонер
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2 text-pink-500">💇‍♀️</span> Фен та праска
+        </li>
+      </ul>
+    </div>
+
+    <!-- Room 2 -->
+    <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+      <h4 class="font-semibold mb-3 text-lg">Кімната 2</h4>
+      <ul class="space-y-2 text-gray-700 text-left">
+        <li class="flex items-center">
+          <span class="mr-2 text-blue-500">🛁</span> Окремий санвузол
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2 text-green-500">👗</span> Гардероб
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2 text-yellow-500">❄️</span> Кондиціонер
+        </li>
+        <li class="flex items-center">
+          <span class="mr-2 text-pink-500">💇‍♀️</span> Фен та праска
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Contact Button -->
+  <a
+    href="tel:+380979909007"
+    class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-lg shadow-md transition"
+    >Зателефонувати</a>
+</section>
 
     <!-- Contacts -->
     <section class="py-16 bg-gray-900 text-white px-6 md:px-20 text-center">
